@@ -1,0 +1,94 @@
+.wp-block-custom-latest-posts {
+
+    // Editor-specific styles
+    .block-editor-block-list__layout {
+        margin: 0;
+    }
+
+    // Preview styles for editor
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    li {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post-content {
+        padding: 1.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+    }
+
+    h3 {
+        margin: 0.75rem 0;
+        font-size: 1.25rem;
+        line-height: 1.4;
+
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+    }
+
+    .excerpt {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 0.75rem;
+        flex-grow: 1;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .post-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    // Loading and empty states
+    .loading,
+    .no-posts {
+        text-align: center;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+        color: #666;
+    }
+}
